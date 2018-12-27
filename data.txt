@@ -1,0 +1,68 @@
+import pandas as pd
+import numpy as np
+
+"""
+arr = np.arange(10, 21)
+emp = {"eid": 101, "name": "John", "age": 30}
+nums = {"a":1, "b":2, "c":3}
+
+employees = [{"eid": 101, "name": "John", "age": 30}, {"eid": 201, "name": "Fionna", "age": 28}]
+
+series = pd.Series(nums)
+print(series)
+print(type(series))
+
+# frame= pd.DataFrame(employees)
+frame= pd.DataFrame(employees, index=[1,2])
+print(frame)
+print(type(frame))
+
+s1 = pd.Series([10, 11, 13], index=["john", "jennie", "jack"])
+s2 = pd.Series([12, 13, 15, 17], index=["john", "jennie", "jack", "joe"])
+s3 = pd.Series([15, 16, 18, 20], index=["john", "jennie", "jack", "joe"])
+
+print(s1)
+print(s2)
+
+table = pd.DataFrame({"2014":s1, "2015":s2})
+print()
+table["2016"] = s3
+print(table)
+print()
+print(table["2015"])
+
+table.pop("2015")
+print()
+print(table)
+
+print()
+print(table.loc["joe"])
+
+print()
+print(table.iloc[2])
+"""
+
+"""
+s1 = pd.Series([10, 11, 13], index=["john", "jennie", "jack"])
+s2 = pd.Series([12, 13, 15, 17], index=["john", "jennie", "jack", "joe"])
+s3 = pd.Series([15, 16, 18, 20], index=["john", "jennie", "jack", "joe"])
+
+table = pd.DataFrame({"2014": s1, "2015": s2})
+table["2016"] = s3
+
+rows = pd.DataFrame([[19, 24], [34, 49]], columns=["2014", "2016"])
+table = table.append(rows, sort=True)
+
+table = table.drop("joe")
+
+print(table)
+
+"""
+
+table = pd.read_csv("CityTemps.csv")
+print(table)
+
+# table.to_csv("CityTemps2.csv")
+
+table = pd.read_excel("ScoreFinal.xlsx")
+print(table)
