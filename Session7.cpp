@@ -1,4 +1,5 @@
 #include<iostream>
+#include<string>
 using namespace std;
 
 // Textual Representation How an Object will look like
@@ -7,7 +8,7 @@ class User{
 
 	// Attributes or Data Members or State of an Object
 public:
-	char* name;
+	stirng name;
 	char* phone;
 	char* email;	
 	char gender;
