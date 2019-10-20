@@ -3,29 +3,29 @@ using namespace std;
 int main(){
 
 	int a = 10;
-	int* ptr = &a;
+	int* p1 = &a;
 
 	cout<<"a is:"<<a<<"\n";
 	cout<<"Address of a is:"<<&a<<"\n";
-	cout<<"ptr is:"<<ptr<<"\n";
-	cout<<"Address of ptr is:"<<&ptr<<"\n";
-	cout<<"Value at ptr is:"<<*ptr<<"\n";
+	cout<<"p1 is:"<<p1<<"\n";
+	cout<<"Address of p1 is:"<<&p1<<"\n";
+	cout<<"Value at p1 is:"<<*p1<<"\n";
 
 	/*
-	ptr++; // Updating Pointer Content
-	cout<<"ptr now is:"<<ptr<<"\n";
-	cout<<"Value at ptr now is:"<<*ptr<<"\n";
+	p1++; // Updating Pointer Content
+	cout<<"p1 now is:"<<p1<<"\n";
+	cout<<"Value at p1 now is:"<<*p1<<"\n";
 	*/
 
 	/*
-	*ptr++;
-	cout<<"ptr now is:"<<ptr<<"\n";
-	cout<<"Value at ptr now is:"<<*ptr<<"\n";
+	*p1++;
+	cout<<"p1 now is:"<<p1<<"\n";
+	cout<<"Value at p1 now is:"<<*p1<<"\n";
 	*/
 
-	(*ptr)++;
-	cout<<"ptr now is:"<<ptr<<"\n";
-	cout<<"Value at ptr now is:"<<*ptr<<"\n";
+	(*p1)++;
+	cout<<"p1 now is:"<<p1<<"\n";
+	cout<<"Value at p1 now is:"<<*p1<<"\n";
 	cout<<"a now is:"<<a<<"\n";
 
 	return 0;
